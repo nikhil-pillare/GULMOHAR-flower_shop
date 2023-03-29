@@ -1,0 +1,141 @@
+header{
+
+    width: 100vw;
+    min-height: 100vh;
+    /* background: #34495E; */
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background:rgb(241, 239, 239);
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+}
+.left{
+    flex-basis: 30%;
+   
+}
+.right{
+    flex-basis: 30%;
+}
+
+form{
+
+    padding: 1rem;
+}
+
+form input[type="text"]{
+
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+
+#Pin-code{
+
+    display: flex;
+    margin-top: 0.5rem;
+}
+.sec{
+
+    margin-left: 10px;
+}
+#Pin-code select{
+    padding: 0.5rem 0.7rem;
+   
+}
+#Pin-code input[type="number"]{
+
+    padding: 0.5rem 0.7rem;
+    
+}
+.right img{
+       width: 100%;
+       height: 45px;
+}
+
+ .btn{
+
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    background: green;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 2.2rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 770px){
+
+    .container{
+
+        flex-direction: column;
+    }
+    
+}
+
+
+
+/* Estilos esteticos no necesarios */ 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.text span:last-child {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.block {
+    display: block;
+}
+
+/* .btn {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    margin: 0 auto 2rem;
+    border: 0;
+} */
+
+/* .btn:active,
+.btn:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+input {
+    width: 15rem;
+    margin: 0 auto 2rem;
+} */
