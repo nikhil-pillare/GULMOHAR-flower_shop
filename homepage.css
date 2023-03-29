@@ -1,0 +1,354 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#brands{
+    display: flex;
+    width: 100%;
+   
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+#brands>img{
+    height: 70%;
+    
+}
+#brands>img:hover{
+    border-bottom: 2px solid black;
+}
+
+
+
+
+form{
+    display: flex;
+}
+form>button{
+    height: 100%;
+}
+
+#search-bar{
+    display: flex;
+    
+    align-items: center;
+    height: 65px;
+    
+   background-color:rgb(244, 244, 244);
+   padding-right: 47px;
+   
+}
+#search-bar>a:hover{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 47, 47);
+
+}
+#search-bar>a{
+    color: white;
+    display: flex;
+    font-family: futura-pt, sans-serif;
+    text-decoration: none;
+    color: rgb(239, 236, 232);
+    width: 10%;
+    
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(49, 47, 47);
+    border-left: 1px solid rgb(49, 47, 47);
+   
+}
+#search-bar>form>input{
+    width: 80%;
+    
+    height: 100%;
+    font-size: 15px;
+    border: 0.3px solid rgb(181, 181, 181);
+   
+}
+#search-bar>form>button{
+    width: 20%;
+    height: 108%;
+    background-color:rgb(233, 176, 187);
+    border: none;
+    color: rgb(110, 38, 48);
+   
+    font-size: 15px;
+}
+#search-bar>form{
+    width: 54%;
+    height: 60%;
+    border: none;
+    margin-left: 27px;
+      margin-right: 15px;
+  }
+  #search-bar>img{
+      height: 50%;
+      margin-left: 49px;
+     
+      
+  }
+
+  #search-bar>img:nth-child(1){
+      height: 100%;
+      margin-left: 25px;
+      width: 14%;
+     
+  }
+  #search-bar>div{
+      height: 52%;
+      margin-left: 19px;
+     
+      width: 29px;
+  }
+  /* #search-bar>div>img{
+      width: 100%;
+  } */
+  
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  
+  
+  }
+  .dropdown>img{
+    width: 35px;
+    margin-left: 6px;
+    
+  }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 230px;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  left: -90px;
+  top: 40px;
+  }
+
+
+  .dropdown-content a {
+  color: rgb(88, 88, 88);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  
+  }
+
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+ 
+  #nav{
+    width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      border-top: 1px solid rgb(144, 144, 144);
+      border-bottom: 1px solid rgb(144, 144, 144);
+      
+  }
+  #nav>div>a{
+      color: black;
+      text-decoration: none;
+      font-family: futura-pt, sans-serif;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* padding: 0px 4px 0px 4px; */
+      height: 100%;
+      border: none;
+  }
+  #nav>div>a:hover{
+      
+      color: black;
+      border-bottom:3px solid black;
+  }
+  
+ 
+  .nav-lvl:hover>.mega-dropdown{
+      display: grid;
+      transition: all 1s ease;
+  }
+  .nav-lvl:hover{
+      /* border-bottom: 1px solid #003399;  */
+      background-color: white;
+      
+      
+  }
+ 
+  .nav-lvl{
+      
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .mega-dropdown{
+  display: grid;
+      grid-template-columns: 0.6fr 0.6fr 0.6fr;
+  display: none;
+
+  
+
+  border-radius: 5px;
+  width: 100%;
+  left: 0%;
+  top: 110px;
+  position: absolute;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 30px 8px rgba(0, 0, 0, 0.1);
+  
+  padding-bottom: 20px;
+  margin-top: 50px;
+
+  }
+  
+  .mega-dropdown>div>img{
+      width: 90%;
+      height: 90%;
+      margin-top: 20px;
+  }
+  .mega-dropdown>div>h2{
+      font-size: 17px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-left: 25px;
+      text-decoration: underline;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+  .mega-dropdown>div>h4{
+      font-size: 13px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-left: 25px;
+      color: gray;
+      cursor: pointer;
+      
+      
+  }
+
+
+
+#deliver{
+    height: 60px;
+    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+    background-color: rgb(255, 226, 232);
+}
+#deliver>a{
+    color: rgb(151, 6, 44);
+    text-decoration: none;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 17px;
+   
+}
+#banner>img{
+   width: 100%;
+   height: 270px;
+   position: absolute;
+}
+#banner{
+    width: 100%;
+    height: 350px;
+   
+}
+#shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 190px;
+    position: relative;
+    top: 30px;
+    left: 56%;
+    
+
+}
+#shop>h5{
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#shop>h4{
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#shop>p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 5px;
+
+}
+#shop>button{
+    text-align: center;
+   margin-top: 5px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30px;
+    width: 120px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+  footer{
+    width: 100%;
+    height: 500px;
+    /* background-color: rgb(233, 176, 187); */
+    background-color: rgb(255, 226, 232);
+  }
+  #footer-flex{
+    display: flex;
+    justify-content: space-around;
+  }
+  #footer-flex>div>a{
+    text-decoration: none;
+    color: rgb(151, 6, 44);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #footer-flex>div>h3{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(67, 1, 29);
+  }
+  #footer-flex>div{
+    display: flex;
+    flex-direction: column;
+  }
+  #footer-flex>div:nth-child(5){
+    margin-top: 30px;
+    justify-content: space-around;
+  }
