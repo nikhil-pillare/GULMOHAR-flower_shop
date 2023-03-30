@@ -4,7 +4,7 @@ let edited=0
 let newadded=0
 
 
-
+let task_name=document.getElementById('task_name')
 let dashboard = document.getElementById('dashboard')
 let addproduct = document.getElementById('addproduct')
 let deletedrender = document.getElementById('deletedrender')
@@ -43,6 +43,7 @@ function showdashboardpage() {
     addproduct.style.display = 'none'
     deletedrender.style.display = 'none'
     updateproduct.style.display = 'none'
+    task_name.innerText='Dashboard'
 }
 
 // to show addpage
@@ -56,6 +57,7 @@ function showaddpage() {
     dashboard.style.display = 'none'
     deletedrender.style.display = 'none'
     updateproduct.style.display = 'none'
+    task_name.innerText='Add Product'
     fetchAddData()
 }
 
@@ -75,7 +77,7 @@ function renderAddedData(data) {
         p2.innerText = 'color' + '-' + element.color
         let p3 = document.createElement('p')
         p3.innerText = 'rating' + '-' + element.rating
-        div.append(img, h4, p1, p2, p3)
+        div.append(img, h4, p1,p2, p3)
         parent.append(div)
     });
 }
@@ -83,7 +85,8 @@ function renderAddedData(data) {
 async function fetchAddData() {
     let res = await fetch('https://bored-school-uniform-bull.cyclic.app/flowers')
     let data = await res.json()
-    productID = data.length + 1
+    if(productID==0){
+    productID = data.length + 1}
     renderAddedData(data)
 }
 
@@ -113,7 +116,7 @@ addDataForm.addEventListener('submit', (e) => {
         addDataForm.reset()
         let parent = document.getElementById('addrender')
         parent.innerHTML = ''
-        // fetchAddData()
+        fetchAddData()
         setTimeout(() => {
             fetchAddData()
         }, 3000);
@@ -132,6 +135,7 @@ function editbuttonpage() {
     deletedrender.style.display = 'none'
     addproduct.style.display = 'none'
     dashboard.style.display = 'none'
+    task_name.innerText='Edit Product'
     fetchEditData()
 }
 
@@ -174,7 +178,7 @@ function rendereditData(data) {
             editdataid=element.id
 
         })
-        div.append(img, h4, p1, p2, p3, edit)
+        div.append(img, h4, p1,p2, p3, edit)
         parent.append(div)
     });
 }
@@ -226,6 +230,7 @@ async function deletepageproduct() {
     addproduct.style.display = 'none'
     dashboard.style.display = 'none'
     updateproduct.style.display = 'none'
+    task_name.innerText='Delete Product'
 
     let res = await fetch('https://bored-school-uniform-bull.cyclic.app/flowers')
     let data = await res.json()
@@ -265,7 +270,7 @@ async function deletepageproduct() {
                 deletepageproduct()
             }, 3000);
         })
-        div.append(img, h4, p1, p2, p3, del)
+        div.append(img, h4, p1,p2, p3, del)
         parent.append(div)
     });
 }
