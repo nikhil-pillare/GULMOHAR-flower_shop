@@ -23,5 +23,5 @@ localStorage.setItem("userDatabase",JSON.stringify(userData))
 // n.addEventListener("click",go);
 
 // async function go(){
-//     window.location.href="http://localhost:2233/auth/google"
+//     window.location.href="#"
 // }
