@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#dashboard{
+    cursor: pointer;
+    display: none;
+}
+
+/* side taskbar */
+#projectlogo{
+    padding-top: 10px;
+    width: 80%;
+}
+.material-symbols-outlined{
+    font-size: 35px !important;
+    margin: 20px 0px;
+}
+#asidenav{
+    background-color:rgb(252, 242, 242);
+    position: sticky;
+    height: 100vh;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icontext{
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 25px;
+}
+#moreinfo{
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#gitimg{
+    width: 20px;
+    border-radius: 50%;
+}
+#gitname,#admincontact{
+    font-size: 20px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+#admincontact{
+    padding-left: 0px;
+    margin-bottom: 10px;
+}
+body{
+    display: grid;
+    grid-template-columns: 20vw auto;
+}
+
+/* navbar */
+#navtop{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+.navicon{
+    font-size: 48px;
+}
+#task_name{
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+/* recent task 4 div */
+#recntTask{
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+}
+#TotalItems>div,#NewlyAdded>div,#TotalEdited>div,#TotalDeleted>div{
+    background-color:rgb(203, 231, 249);
+    border-radius: 10px;
+    padding:20px;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+}
+#NewlyAdded>div{
+    background-color: rgb(209, 250, 209);
+}
+#TotalEdited>div{
+    background-color: rgb(253, 253, 200);
+}
+#TotalDeleted>div{
+    background-color: rgb(254, 203, 203);
+}
+#newadd,#newtotal,#newedit,#newdelete{
+    font-size: 35px;
+}
+
+/* admin Details */
+#adminDetails,#addproduct,#updateproduct{
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 63% 35%;
+    justify-content: space-between;
+}
+#addproduct{
+    display: none;
+    cursor: pointer;
+}
+#adminadname{
+    border: 5px solid rgb(180, 227, 246);
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    height: 500px;
+}
+#adminadname>h3{
+    padding-bottom: 20px;
+}
+#adminadname>p{
+    padding-bottom: 10px;
+}
+
+#fullinfo{
+    border: 5px solid lightgrey;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    height: 500px;
+}
+
+
+/* add product */
+#addform>h2,#updateform>h2{
+    text-align: center;
+}
+#addform>form,#updateform>form{
+    width: 80%;
+    margin: 20px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+#addform>form>input,#updateform>form>input{
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+#addrender,#updaterender{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+/* deleting */
+#deletedrender{
+    padding: 20px;
+    display: none;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}

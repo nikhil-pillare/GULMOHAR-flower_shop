@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <aside id="asidenav">
+        <div>
+            <img src="./admin logo/logo.jpg" alt="" id="projectlogo">
+            <P id="dashbutton"><span class="material-symbols-outlined">menu</span> <span class="icontext" id="task">Dashboard</span></P>
+            <P id="addbutton"><span class="material-symbols-outlined">folder_open</span> <span class="icontext" >Add Product</span></P>
+            <P id="editbutton"><span class="material-symbols-outlined">edit_square</span> <span class="icontext" >Edit Product</span></P>
+            <P id="deletebutton"><span class="material-symbols-outlined">delete</span> <span class="icontext">Delete Product</span> </P>
+        </div>
+        <div id="moreinfo">
+            <a href="https://github.com/nikhil-pillare/groovy-airplane-6414"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6-naZbHvXd76qGm4fUU4IN43FhWdWZust7XEwQfo5SzdXhXB5ZPI0D4aolE04Tjj5jU" alt="" id="gitimg"><span id="gitname">GIT</span></a>
+            <a href="mailto:karanjarwal999@gmail.com" id="admincontact" title="Nikhil Pillare">Contact Us</a>
+        </div>
+    </aside>
+    <main>
+        <nav id="navtop">
+            <h1><span class="navicon">&#8801</span><span id="task_name"> Dashboard</span></h1>
+            <h1>Hii... Admin</h1>
+        </nav>
+        <div id="dashboard">
+            <div id="recntTask">
+                <div id="TotalItems">
+                    <div>
+                        <p>Total Items<br><span id="newtotal">40</span></p>
+                        <img src="https://www.iconpacks.net/icons/3/free-icon-blue-shopping-cart-10910.png" alt="">
+                    </div>
+                    <p></p>
+                </div>
+                <div id="NewlyAdded">
+                    <div>
+                        <p>Newly Added<br><span id="newadd">0</span></p>
+                        <img src="https://www.iconpacks.net/icons/3/free-icon-green-shopping-cart-10909.png" alt="">
+                    </div>
+                    <p></p>
+                </div>
+                <div id="TotalEdited">
+                    <div>
+                        <p>Total Edited<br><span id="newedit">0</span></p>
+                        <img src="https://www.iconpacks.net/icons/3/free-icon-yellow-shopping-cart-10905.png" alt="">
+                    </div>
+                    <p></p>
+                </div>
+                <div id="TotalDeleted">
+                    <div>
+                        <p>Total Deleted<br><span id="newdelete">0</span></p>
+                        <img src="https://www.iconpacks.net/icons/3/free-icon-red-shopping-cart-10906.png
+                            " alt="">
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <div id="adminDetails">
+                <div id="fullinfo">
+
+                </div>
+                <div id="adminadname">
+                    <h3>Admins -</h3>
+                    <p> IA - Ritesh kamthe</p>
+                    <p> Fw24_151 - Nikhil Pillare</p>
+                    <p> Fw25_095 - Sourabh Mandal</p>
+                    <p> Fw24_257 - Karan Jarwal</p>
+                    <p> Fw24_753 - Aditya Choudhary</p>
+                    <p> Fw22_418 - Anand Singh</p>
+                </div>
+            </div>
+        </div>
+        <!-- add product  -->
+        <div id="addproduct">
+            <div id="addrender"></div>
+            <div id="addform">
+                <h2>ADD Product</h2>
+                <form >
+                    <input id="img" type="text" placeholder="Image">
+                    <input id="title" type="text" placeholder="Title">
+                    <input id="color" type="text" placeholder="Color">
+                    <input id="price" type="number" placeholder="Price">
+                    <input id="rating" type="number" placeholder="Rating">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <div id="updateproduct">
+            <div id="updaterender"></div>
+            <div id="updateform">
+                <h2>Update Product</h2>
+                <form >
+                    <input id="img" type="text" placeholder="Image">
+                    <input id="title" type="text" placeholder="Title">
+                    <input id="color" type="text" placeholder="Color">
+                    <input id="price" type="number" placeholder="Price">
+                    <input id="rating" type="number" placeholder="Rating">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- delete product -->
+        <div id="deletedrender">
+
+        </div>
+    </main>
+</body>
+<script src="./admin.js"></script>
+
+</html>
