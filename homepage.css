@@ -522,3 +522,21 @@ font-family: cursive;
     margin-top: 30px;
     justify-content: space-around;
   }
+
+
+
+  #payopt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+  }
+
+  @media screen {
+    #brands{
+        display: flex;
+        width: 100%;
+       
+        height: 40px;
+        justify-content: space-around;
+        align-items: center;
+    }
+  }
