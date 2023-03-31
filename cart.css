@@ -1,0 +1,232 @@
+
+.cartcont {
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+  .cartcont>div {
+    display: flex;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+  .cartcont>div>div:nth-child(1) {
+    width: 40%;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  .cartcont>div>div:nth-child(1)>img {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .cartcont>div>div:nth-child(1)>img:hover {
+    cursor: zoom-in;
+  }
+  
+  .cartcont>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  
+  .cartcont>div>div:nth-child(2)>h2,
+  .cartcont>div>div:nth-child(2)>p {
+    margin-bottom: 0px;
+  }
+  
+  .cartcont>div>div:nth-child(2)>p~h2 {
+    margin-bottom: 10px;
+  }
+  
+  .cartcont>div>div:nth-child(2)>button {
+    width: 60%;
+    margin: 20px 0;
+    font-size: 16px;
+    padding: 8px;
+    color: white;
+    border: none;
+    background-color: rgb(24, 21, 22);
+  }
+  
+  .cartcont>div>div:nth-child(2)>div {
+    width: 100px;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cartcont>div>div:nth-child(2)>div>button {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border: none;
+    background-color: rgb(24, 20, 22);
+  }
+  .cartcont button {
+    font-size: 20px;
+    padding: 5px 120px 5px 120px;
+    color: white;
+    border: none;
+    background-color: rgb(49, 41, 154);
+  }
+  
+  .carttotal {
+    margin: auto;
+    margin-top: 80px;
+    /* padding-top: 200px; */
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 93%;
+    background-color: rgb(49, 66, 188);
+    color: white;
+  }
+  
+  .cart-empty {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .cart-empty img{
+    width: 80%;
+  }
+  
+  .hide-div {
+    display: none;
+  }
+  
+  .cartcont img {
+    object-fit: contain;
+    gap: 5%;
+  }
+  #cartnew{
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    flex-direction: row-reverse;
+    gap: 5%;
+    padding-left:8%;
+    padding-right: 8%;
+    justify-content: center;
+    
+  }
+  
+  /*  */
+  
+  
+  .summary {
+    margin: auto;
+    width: 450px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .summary-subtotal,
+  .summary-total {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    margin: 1rem 0;
+    overflow: hidden;
+    padding: 0.5rem 0;
+  }
+  
+  .subtotal-title,
+  .subtotal-value,
+  .total-title,
+  .total-value,
+  .promo-title,
+  .promo-value {
+    color: #111;
+    float: left;
+    width: 50%;
+    
+  }
+  #basket-total{
+    font-size: 1.975rem;
+  }
+  .summary-promo {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  .promo-title {
+    float: left;
+    width: 70%;
+  }
+  
+  .promo-value {
+    color: #8B0000;
+    float: left;
+    text-align: right;
+    width: 30%;
+  }
+  
+  .summary-delivery {
+    padding-bottom: 3rem;
+  }
+  
+  .subtotal-value,
+  .total-value {
+    text-align: right;
+    
+  }
+  
+  .total-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.975rem;
+   
+  }
+  
+  .summary-checkout {
+    display: block;
+  }
+  
+  .checkout-cta {
+    display: block;
+    float: none;
+    font-size: 0.975rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.625rem 0;
+    width: 100%;
+    background-color:rgb(49, 66, 188);
+    color: white;
+  
+    border: 0ch;
+  }
+  
+  .summary-delivery-selection {
+    background-color:  rgb(233, 233, 233);
+    border-radius: 4px;
+    display: block;
+    font-size: 0.925rem;
+    height: 34px;
+    width: 100%;
+  }
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    }
+
+    .product_img{
+
+      width: 350px;
+    }
+  
+  
+   
