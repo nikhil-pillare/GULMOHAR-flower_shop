@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="homepage.css">
-    <title>Document</title>
 </head>
 <body>
     <div id="brands">
@@ -409,12 +410,48 @@
            </div>
          </div>
       </div>
-
-
-     
-      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
-      <footer>
+      
+      <main>
+    <div id="Kdescrip"></div>
+    <div id="Kmaindiv">
+        <div id="Kfilters">
+            <div id="Krateingfilter">
+                Rating <br>
+                <input type="checkbox" value="5" id="Krateing5">
+                <label for="Krateing5">&#9733&#9733&#9733&#9733&#9733</label><br>
+                <input type="checkbox" value="4" id="Krateing4">
+                <label for="Krateing4">&#9733&#9733&#9733&#9733<span class="Kblack">&#9733</span></label><br>
+                <input type="checkbox" value="3" id="Krateing3">
+                <label for="Krateing3">&#9733&#9733&#9733<span class="Kblack">&#9733&#9733</span></label><br>
+                <input type="checkbox" value="2" id="Krateing2">
+                <label for="Krateing2">&#9733&#9733<span class="Kblack">&#9733&#9733&#9733</span></label><br>
+                <input type="checkbox" value="1" id="Krateing1">
+                <label for="Krateing1">&#9733<span class="Kblack">&#9733&#9733&#9733&#9733</span></label>
+            </div>
+            <div id="Kpricefilter">
+                Sort by price<br>
+                <input type="number" placeholder="From" id="Kpricestart"><br id="notshow">
+                <input type="number" placeholder="To" id="Kpriceend"><br>
+                <input type="checkbox" value="20" id="K20">
+                <label for="K20">$ 20</label><br>
+                <input type="checkbox" value="50" id="K50">
+                <label for="K50">$ 50</label><br>
+                <input type="checkbox" value="75" id="K75">
+                <label for="K75">$ 75</label><br>
+                <input type="checkbox" value="100" id="K100">
+                <label for="K100">$ 100</label><br>
+                <input type="checkbox" value="250" id="K250">
+                <label for="K250">$ 250</label><br>
+                <input type="checkbox" value="500" id="K500">
+                <label for="K500">$ 500</label><br>
+            </div>
+        </div>
+        <!-- <div id="emptydiv"></div> -->
+        <div id="Kdisplay"></div>
+        <div id="pagebutton"></div>
+    </div>
+</main>
+    <footer>
 
         <div id="footer-flex">
         <div>
@@ -488,4 +525,6 @@
 
       </footer>
 </body>
+<script src="product.js"></script>
+
 </html>
