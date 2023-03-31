@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+main{
+    margin-top: 20px;
+}
+#notshow{
+    display: none;
+}
+#cartelement>button,.cartmessbutt>div>div>button{
+    background-color: #1377c9;
+    border: none;
+    font-weight: 700;
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 15px;
+    padding: 7px;
+    margin-right: 20px;
+}
+#Kdescrip{
+    display: none;
+    position: fixed;
+    left: 25vw;
+    top: 25%;
+    padding: 10px;
+    width: 600px;
+    border: 2px solid #1377c9;
+    background-color:white;
+    color: black;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#Krateingfilter>label{
+    color: skyblue;
+}
+.Kblack{
+    color: gray;
+}
+#Kmaindiv{
+    display: none;
+    width: 1200px;
+    margin: auto;
+    min-height: 450px;
+    /* visibility: hidden; */
+}
+#emptydiv{
+    z-index: -1;
+}
+
+#Krateingfilter{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#Kfilters{
+    position: absolute;
+    /* right: 30px; */
+    /* bottom: 0; */
+    z-index: 0;
+}
+
+footer{
+    position: relative;
+    z-index: 1;
+}
+#Kpricefilter{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#Kpricefilter>input{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#Kpricestart,#Kpriceend{
+    width: 80px;
+    height: 30px;
+    color:black;
+}
+#Kdisplay{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+#Kdisplay>div{
+    padding: 10px;
+    box-shadow: gray 0px 0px 5px;
+    /* background-color:black;
+    color: white; */
+}
+#Kdisplay>div>p{
+    padding-left: 10px;
+}
+
+.Kcard>img{
+    width: 100%;
+}
+#Kmaindiv{
+    display: grid;
+    grid-template-columns:80%;
+    justify-content: right;
+}
+.Kbigdiskdiv{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Kbigdiscp{
+    text-align: end;
+    cursor: pointer;
+}
+.Kbigdiskdiv>div>img{
+    width: 100%;
+    height: 250px;
+    /* padding-right: 20px; */
+}
+#pagebutton{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#pagebutton>button{
+    padding: 10px 15px;
+    margin: 15px;
+    font-size: 20px;
+    border: none;
+    /* color: white; */
+    /* background-color: rgb(35, 35, 35); */
+    /* box-shadow: white 0px 0px 10px; */
+}
+.cardprice{
+    margin: 10px 0px 5px 0px;
+    font-weight: 600;
+}
+.Kblue{
+    color: rgb(29, 117, 152);
+}
+#Kdescrip>div>div>button,#Kdescrip>div>div>p,#Kdescrip>div>div>h3{
+    color: black;
+    padding: 5px;
+}
+#Kdescrip>p{
+    color: black;
+}
+#cartmess{
+    margin-top: 50px;
+    text-align: center;
+}
+.cartmessbutt{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+#cartelement>p>b{
+    color: black;
+}
+.Kgif{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width:1250px){
+    #Kmaindiv{
+        width: auto;
+        margin: 0% 5%;
+    }
+}
+@media screen and (max-width:1000px){
+    #Kpricestart,#Kpriceend{
+        width: 60px;
+        height: 25px;
+        color:black;
+    }
+    #Kdisplay{
+        gap: 20px;
+    }
+}
+@media screen and (max-width:780px){
+    #Kdisplay{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    #Kmaindiv{
+        margin: 0% 3%;
+    }
+    #Kdisplay{
+        width: 90%;
+        margin: 0% 0% 0% auto;
+    }
+    
+}
+@media screen and (max-width:880px){
+    .Kbigdiskdiv{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #Kdescrip{
+        width: 400px;
+        height: 550px;
+        top: 15%;
+    }
+
+}
+@media screen and (max-width:580px){
+    #Kdescrip{
+        width: 350px;
+        height: auto;
+        right:0
+    }
+    #notshow{
+        display: inline;
+    }
+    #Kpricestart,#Kpriceend{
+        width: 90px;
+        height: 30px;
+    }
+}
+#Kbigdiskdiv>div>p{
+    color: black;
+}
+#slider{
+    display: flex;
+    align-items: center;
+}
+#slider>p{
+    cursor: pointer;
+}
+
+.cartmessbutt{
+   display: grid;
+   grid-template-columns: auto auto; 
+}
+.cartmessbutt>img{
+   width: 100px;
+   margin-right: 5px;
+}
+#Kdescrip>h3>span:first-child{
+    color: green;
+    margin-right: 5px;
+}
+#Kdescrip>h3,#Kdescrip>span{
+    display: block;
+    padding: 5px;
+    background-color: rgb(244, 244, 119);
+}
+.cartmessbutt>div>div{
+    position: absolute;
+    bottom: 0;
+}
+.cartmessbutt>div>p:nth-child(2){
+    margin-bottom: 35px;
+}
