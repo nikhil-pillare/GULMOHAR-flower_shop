@@ -29,9 +29,9 @@
     <div id="search-bar">
         <img src="gulmohar.png" alt="logo">
          
-         <form>
-         <input type="text" placeholder="     search for items and brands">
-         <button>SEARCH</button>
+         <form id="search" action="/search">
+         <input id="inputsearch" type="text" placeholder="     search for items and brands">
+         <input id="searchbtn" type="submit" value="SEARCH">
  
        </form>
        <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt34a8699231b452d4/reminders_icon_black.svg" alt="">
@@ -724,4 +724,68 @@
 
       </footer>
 </body>
+
+<script>
+  let seach=document.getElementById("search")
+let inputseach=document.getElementById("inputsearch")
+
+fetch("https://bored-school-uniform-bull.cyclic.app/10flowers")
+
+.then(response=>response.json())
+.then(response=>{
+console.log(response)
+const productDiv=document.getElementById("fetch-product");
+
+renderproduct(response)
+function renderproduct(products){
+    productDiv.innerHTML="";
+
+    for(let product of products){
+        const productCard=document.createElement("div")
+
+        const productimg=document.createElement("img")
+        productimg.src=product.img;
+
+        const productname=document.createElement("h4")
+        productname.textContent=product.title;
+
+        
+
+        const productdetail=document.createElement("h6");
+        productdetail.textContent=product.rating;
+
+        const productprice=document.createElement("p")
+        productprice.textContent='₹' +product.price;
+
+
+        productCard.append(productimg,productname, productdetail, productprice);
+
+        productDiv.append(productCard)
+
+    }
+}
+seach.addEventListener("submit", function(el){
+   el.preventDefault();
+
+   let btn=inputseach.value;
+   let data=response.filter((element)=>{
+    if(element.title.toUpperCase().includes(btn.toUpperCase())){
+        return true;
+    }else{
+        return false;
+    }
+   })
+
+   renderproduct(data)
+})
+
+
+
+
+
+})
+
+
+
+</script>
 </html>
