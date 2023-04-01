@@ -5,38 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./SignUp.css">
 </head>
 <body>
-    <div id="container">
+    <div id="maincontainer">
         <div id="left">
             <div>
-                <img src="" alt="">
+                <a href="../index.html"><img src="../gulmohar.png" alt="gulmohar Flower Shop"></a>
             </div>
-            <div><p>Create an account for faster checkout and order tracking.</p></div>
+            <div><p id="shortmsg" style="font-family: 'Trebuchet MS';">Create an account for faster checkout and order tracking.</p></div>
             <div>
-                12 Brand and logo.
+                <img style="margin-top: 0px;border-radius: 0px;" src="https://cdn1.harryanddavid.com/wcsstore/HarryAndDavid/images/Auth0/celebrations_family_of_brands.png" alt="">
             </div>
         </div>
         <div id="right">
             <h1>Create Account</h1><br>
             <form>
-                <label for="firstName"><b>First Name</b></label><br>
-                <input type="text" id="fname" placeholder="Entre here" name="FirstName"/>
-                <label for="lastName"><b>Last Name</b></label><br>
-                <input type="text" id="lname" placeholder="Entre here" name="LastName"/><br>
+                <div id="inputdetail">
+                    <div>
+                        <label for="firstName"><b>First Name</b></label><br>
+                        <input type="text" id="fname" placeholder="Entre here" name="FirstName"/>
+                    </div>
+                    <div>
+                        <label for="lastName"><b>Last Name</b></label><br>
+                        <input type="text" id="lname" placeholder="Entre here" name="LastName"/><br>
+                    </div>
+                </div>
+                
                 <label for="email"><b>Email</b></label><br>
                 <input type="email" id="email" placeholder="Enter Email" name="email" required/><br><br>
                 <label for="psw"><b>Password</b></label><br>
                 <input type="password" id="password" placeholder="Enter Password" name="psw" required/><br><br>
                 <input type="submit" id="submit" value="Submit" />
             </form>
+            <div class="termContainer">
+                <p>By continuing, you agree to our <a href="../SignIn/t&C.html">Terms Of Uses</a> and <a href="../SignIn/t&C.html">Privacy Notice</a>. </p>
+            </div>
             <div id="inst">
-                <p>OR SignUp Using</p>
+                <p>Or SignUp Using</p>
             </div>
             <div id="image">
                 <img src="https://cdn1.harryanddavid.com/wcsstore/HarryAndDavid/images/Auth0/fb_signin.png" class="one">
                 <img src="https://cdn1.harryanddavid.com/wcsstore/HarryAndDavid/images/Auth0/btn_google_signin_light_normal_web@2x.png" class="two one", id="google">
-            </div>
             </div>
             <div id="newone">
                 <p>Existing User?</p>

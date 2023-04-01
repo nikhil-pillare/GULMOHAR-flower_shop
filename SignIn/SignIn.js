@@ -3,7 +3,7 @@ let userData=JSON.parse(localStorage.getItem("userDatabase"))
     let password;
     let message = document.getElementById("success")
     let formData= document.querySelector("form")
-    var flag = false;
+    var flag = 0;
     formData.addEventListener("submit",function(e){
         e.preventDefault();
         mail=document.getElementById("email").value;
@@ -11,18 +11,22 @@ let userData=JSON.parse(localStorage.getItem("userDatabase"))
         
         userData.map(function(ele){
             if(mail==ele.email && password==ele.password){
-                flag=true;
+                flag=1;
+
                 // check() 
+            }else if(mail == "admin@gmail.com" && password == "admin"){
+                flag = 2;    
             }
-            
             })
             console.log(flag)
         confirm(flag);
    })
     function confirm(flag){
-        if(flag == true) {
+        if(flag == 1) {
             message.innerHTML="Log in Successful"
             setTimeout(()=>window.location.href="/index.html",1000)
+        }else if(flag == 2){
+            window.location.href = "/admin.html"
         }else{
             alert("wrong credentials")
         }
