@@ -1,25 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-#dashboard{
+#dashboard {
     cursor: pointer;
     display: none;
 }
 
 /* side taskbar */
-#projectlogo{
+#projectlogo {
     padding-top: 10px;
     width: 80%;
 }
-.material-symbols-outlined{
+
+.material-symbols-outlined {
     font-size: 35px !important;
     margin: 20px 0px;
+    cursor: pointer;
 }
-#asidenav{
-    background-color:rgb(252, 242, 242);
-    border-right: 2px solid rgb(250, 181, 181) ;
+
+#asidenav {
+    min-width: 40px;
+    background-color: rgb(252, 242, 242);
+    border-right: 2px solid rgb(250, 181, 181);
     position: sticky;
     height: 100vh;
     padding-left: 30px;
@@ -27,180 +31,451 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.icontext{
+
+.icontext {
     cursor: pointer;
     padding-left: 20px;
     font-size: 25px;
 }
-#moreinfo{
+
+#moreinfo {
     display: flex;
     height: 65px;
     justify-content: space-between;
     flex-direction: column;
 }
-#gitimg{
+
+#gitimg {
     width: 20px;
     border-radius: 50%;
 }
-#gitname,#admincontact{
+
+#gitname,
+#admincontact {
     font-size: 20px;
     padding-left: 10px;
     text-decoration: none;
     color: black;
 }
-#admincontact{
+
+#admincontact {
     padding-left: 0px;
     margin-bottom: 10px;
 }
-body{
+
+body {
     display: grid;
     grid-template-columns: 20vw auto;
 }
 
 /* navbar */
-#navtop{
-    height: 100px;
+#navtop {
+    height: 12vh;
     display: flex;
     align-items: center;
     padding: 0px 20px;
     justify-content: space-between;
     border-bottom: 1px solid rgb(152, 151, 151);
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
-.navicon{
+
+.navicon {
     font-size: 48px;
 }
-#task_name{
+
+#task_name {
     margin-left: 20px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* recent task 4 div */
-#recntTask{
+#recntTask {
+    height: 20vh;
     box-sizing: border-box;
     padding: 0px 20px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 1vh;
 }
 
-#TotalItems>div,#NewlyAdded>div,#TotalEdited>div,#TotalDeleted>div{
-    background-color:rgb(203, 231, 249);
+#TotalItems>div,
+#NewlyAdded>div,
+#TotalEdited>div,
+#TotalDeleted>div {
+    background-color: rgb(203, 231, 249);
     border: 2px solid rgb(61, 200, 255);
     border-radius: 10px;
     border-top-left-radius: 0px;
-    padding:20px;
-    font-size: 28px;
+    padding: 20px 10px;
+    font-size: 25px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
 }
-#NewlyAdded>div{
+
+#NewlyAdded>div {
     background-color: rgb(209, 250, 209);
     border: 2px solid rgb(33, 252, 5);
 }
-#TotalEdited>div{
+
+#TotalEdited>div {
     background-color: rgb(253, 253, 200);
     border: 2px solid goldenrod;
 }
-#TotalDeleted>div{
+
+#TotalDeleted>div {
     background-color: rgb(254, 203, 203);
     border: 2px solid red;
 }
-#newadd,#newtotal,#newedit,#newdelete{
+
+#newadd,
+#newtotal,
+#newedit,
+#newdelete {
     font-size: 35px;
 }
 
 /* admin Details */
-#adminDetails{
+#adminDetails {
     padding: 0px 20px;
     display: grid;
-    grid-template-columns: 64% 35%;
+    grid-template-columns: 64% 34%;
+    height: 63vh;
     justify-content: space-between;
 }
-#addproduct{
+
+#addproduct {
     display: none;
     cursor: pointer;
 }
-#adminadname{
+
+.codehidden {
+    display: none;
+}
+
+#adminadname {
     border: 5px solid rgb(149, 221, 250);
     padding: 20px;
     border-top-right-radius: 20px;
     box-sizing: border-box;
     font-size: 30px;
-    height: 500px;
+    height: 100%;
 }
-#adminadname>h3{
+
+#adminadname>h4 {
     padding-bottom: 20px;
 }
-#adminadname>p{
+
+#adminadname>p {
     padding-bottom: 10px;
 }
 
-#fullinfo{
+#fullinfo {
     overflow: hidden;
     border: 5px solid lightgrey;
     box-sizing: border-box;
-    height: 500px;
+    height: 100%;
     border-radius: 20px;
 }
 
 
 /* add product */
-#addproduct,#updateproduct{
+#addproduct,
+#updateproduct {
     padding: 0px 20px;
     display: grid;
     grid-template-columns: 70% 28%;
     justify-content: space-between;
 }
-#addform>h2,#updateform>h2{
+
+#addform>h2,
+#updateform>h2 {
     text-align: center;
 }
-#addform>form,#updateform>form{
+
+#addform>form,
+#updateform>form {
     width: 90%;
     margin: 20px auto 0px auto;
     display: flex;
     flex-direction: column;
 }
-#addform>form>input,#updateform>form>input{
+
+#addform>form>input,
+#updateform>form>input {
     height: 40px;
     margin-top: 15px;
     padding-left: 10px;
     font-size: 25px;
     border-radius: 10px;
 }
-#addrender,#updaterender{
+
+#addrender,
+#updaterender {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
-    height: 650px;
+    height: 83vh;
     overflow-y: scroll;
 }
-#addrender>div,#updaterender>div{
+
+#addrender>div,
+#updaterender>div {
     padding: 5px;
     border: 2px solid lightgrey;
 }
 
 /* deleting */
-#deletedrender{
+#deletedrender {
     padding: 10px;
     display: none;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    height: 630px;
+    height: 80vh;
     overflow-y: scroll;
 }
-#deletedrender>div{
+
+#deletedrender>div {
     padding: 10px;
     box-shadow: rgb(155, 155, 155) 0px 1px 8px;
 }
 
-#fullinfo>img{
+#fullinfo>img {
+    box-sizing: border-box;
     border-radius: 5px;
     overflow: hidden;
     width: 100%;
-    height: 102%;
+    height: 100%;
+}
+
+@media screen and (max-width:1200px) {
+    #adminadname {
+        font-size: 25px;
+    }
+
+    .icontext {
+        font-size: 20px;
+    }
+
+    #adminDetails {
+        grid-template-columns: 68% 30%;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #adminadname {
+        font-size: 25px;
+    }
+
+    .icontext {
+        display: none;
+    }
+
+    #adminDetails {
+        grid-template-columns: 68% 30%;
+    }
+
+    .icontext {
+        cursor: pointer;
+        padding-left: 20px;
+        font-size: 35px;
+    }
+
+    #projectlogo {
+        width: 100%;
+    }
+
+    body {
+        grid-template-columns: 10vw auto;
+    }
+
+    #gitname {
+        display: none;
+    }
+
+    #gitimg {
+        width: 50px;
+    }
+
+    #admincontact {
+        display: none;
+    }
+
+    #deletedrender {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #addrender,
+    #updaterender {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #TotalItems>div,
+    #NewlyAdded>div,
+    #TotalEdited>div,
+    #TotalDeleted>div {
+        padding: 10px 5px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #adminadname {
+        font-size: 20px;
+    }
+
+    #recntTask>div>div>img {
+        width: 50px;
+    }
+
+    #recntTask>div>div>p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #recntTask {
+        height: 25vh;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-right: 5px;
+    }
+
+    #adminDetails {
+        padding-right: 5px;
+        height: 58vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #adminadname {
+        height: 40%;
+        font-size: 20px;
+        padding: 10px;
+        font-size: 20px;
+        /* height: 100%; */
+    }
+
+    #recntTask>div>div>img {
+        width: 50px;
+    }
+
+    #recntTask>div>div>p {
+        font-size: 24px;
+
+    }
+
+    #asidenav {
+        padding-left: 20px;
+    }
+
+    #newadd,
+    #newtotal,
+    #newedit,
+    #newdelete {
+        font-size: 30px;
+    }
+
+    #adminadname>h4 {
+        padding-bottom: 10px;
+    }
+
+    #adminadname>p {
+        padding-bottom: 5px;
+    }
+
+    #gitimg {
+        width: 40px;
+    }
+
+    .codehidden {
+        display: inline;
+    }
+
+    #updateproduct,
+    #addproduct {
+        padding: 0px;
+    }
+
+    #addform>form,
+    #updateform>form {
+        width: 90%;
+        margin: 20px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #addform>form>input,
+    #updateform>form>input {
+        height: 30px;
+        margin-top: 10px;
+        padding-left: 5px;
+        font-size: 15px;
+        border-radius: 0px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    #deletedrender {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    #asidenav {
+        padding-left: 10px;
+    }
+
+    #recntTask>div>div>p {
+        font-size: 18px;
+
+    }
+
+    #navtop>h1:nth-child(2) {
+        display: none;
+    }
+
+    #newadd,
+    #newtotal,
+    #newedit,
+    #newdelete {
+        font-size: 25px;
+    }
+
+    #updateproduct,
+    #addproduct {
+       
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+    #addform,
+    #updateform {
+       grid-row: 1;
+    }
+    #addform>form,
+    #updateform>form {
+        width: 70%;
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #addform>form>input,
+    #updateform>form>input {
+        height: 20px;
+        margin-top: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+        border-radius: 0px;
+    }
+    #addrender,
+    #updaterender {
+        height: 60vh;
+    }
 }
