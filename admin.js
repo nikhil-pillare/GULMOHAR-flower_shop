@@ -1,10 +1,10 @@
 let productID = 0
-let newdeleted=0
-let edited=0
-let newadded=0
+let newdeleted = 0
+let edited = 0
+let newadded = 0
 
 
-let task_name=document.getElementById('task_name')
+let task_name = document.getElementById('task_name')
 let dashboard = document.getElementById('dashboard')
 let addproduct = document.getElementById('addproduct')
 let deletedrender = document.getElementById('deletedrender')
@@ -43,7 +43,7 @@ function showdashboardpage() {
     addproduct.style.display = 'none'
     deletedrender.style.display = 'none'
     updateproduct.style.display = 'none'
-    task_name.innerText='Dashboard'
+    task_name.innerText = 'Dashboard'
 }
 
 // to show addpage
@@ -57,7 +57,7 @@ function showaddpage() {
     dashboard.style.display = 'none'
     deletedrender.style.display = 'none'
     updateproduct.style.display = 'none'
-    task_name.innerText='Add Product'
+    task_name.innerText = 'Add Product'
     fetchAddData()
 }
 
@@ -77,7 +77,7 @@ function renderAddedData(data) {
         p2.innerText = 'color' + '-' + element.color
         let p3 = document.createElement('p')
         p3.innerText = 'rating' + '-' + element.rating
-        div.append(img, h4, p1,p2, p3)
+        div.append(img, h4, p1, p2, p3)
         parent.append(div)
     });
 }
@@ -85,8 +85,9 @@ function renderAddedData(data) {
 async function fetchAddData() {
     let res = await fetch('https://bored-school-uniform-bull.cyclic.app/flowers')
     let data = await res.json()
-    if(productID==0){
-    productID = data.length + 1}
+    if (productID == 0) {
+        productID = data.length + 1
+    }
     renderAddedData(data)
 }
 
@@ -94,7 +95,10 @@ let addDataForm = document.querySelector('#addform>form')
 addDataForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    createData()
+    if (addDataForm.title.value) {
+        createData()
+    }
+
     async function createData() {
         console.log('posting');
         let res = await fetch(`https://bored-school-uniform-bull.cyclic.app/flowers`, {
@@ -135,7 +139,7 @@ function editbuttonpage() {
     deletedrender.style.display = 'none'
     addproduct.style.display = 'none'
     dashboard.style.display = 'none'
-    task_name.innerText='Edit Product'
+    task_name.innerText = 'Edit Product'
     fetchEditData()
 }
 
@@ -166,19 +170,19 @@ function rendereditData(data) {
         let edit = document.createElement('button')
         edit.innerText = 'Edit'
         edit.style.backgroundColor = 'yellow'
-        edit.style.border = 'none'
-        edit.style.padding = '5px'
+        edit.style.border = '1px solid gray'
+        edit.style.padding = '5px 10px'
         edit.addEventListener('click', () => {
             let editDataForm = document.querySelector('#updateform>form')
-            editDataForm.title.value=element.title
-            editDataForm.img.value=element.img
-            editDataForm.price.value=element.price
-            editDataForm.color.value=element.color||''
-            editDataForm.rating.value=element.rating
-            editdataid=element.id
+            editDataForm.title.value = element.title
+            editDataForm.img.value = element.img
+            editDataForm.price.value = element.price
+            editDataForm.color.value = element.color || ''
+            editDataForm.rating.value = element.rating
+            editdataid = element.id
 
         })
-        div.append(img, h4, p1,p2, p3, edit)
+        div.append(img, h4, p1, p2, p3, edit)
         parent.append(div)
     });
 }
@@ -187,9 +191,10 @@ let editDataForm = document.querySelector('#updateform>form')
 editDataForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    let obj={}
-
-    editData()
+    let obj = {}
+    if (editDataForm.title.value) {
+        editData()
+    }
     async function editData() {
         let res = await fetch(`https://bored-school-uniform-bull.cyclic.app/flowers/${editdataid}`, {
             method: 'PATCH',
@@ -230,11 +235,11 @@ async function deletepageproduct() {
     addproduct.style.display = 'none'
     dashboard.style.display = 'none'
     updateproduct.style.display = 'none'
-    task_name.innerText='Delete Product'
+    task_name.innerText = 'Delete Product'
 
     let res = await fetch('https://bored-school-uniform-bull.cyclic.app/flowers')
     let data = await res.json()
-    totalnew=data.length
+    totalnew = data.length
 
     let parent = document.getElementById('deletedrender')
     parent.innerHTML = ''
@@ -257,32 +262,38 @@ async function deletepageproduct() {
         del.style.border = 'none'
         del.style.padding = '5px'
         del.addEventListener('click', () => {
-            deleteData()
+            let confirmtemp = confirm("Confirm to Delete")
+            if (confirmtemp) {
+                deleteData()
+            }
             async function deleteData() {
-                let res = await fetch(`https://bored-school-uniform-bull.cyclic.app/flowers/`+ element.id, {
+                let res = await fetch(`https://bored-school-uniform-bull.cyclic.app/flowers/` + element.id, {
                     method: 'DELETE',
-                  })
+                })
             }
             parent.innerHTML = ''
             newdeleted++
             deletepageproduct()
-            setTimeout(() => {
-                deletepageproduct()
-            }, 3000);
+            runagain()
+            function runagain() {
+                setTimeout(() => {
+                    deletepageproduct()
+                }, 3000);
+            }
         })
-        div.append(img, h4, p1,p2, p3, del)
+        div.append(img, h4, p1, p2, p3, del)
         parent.append(div)
     });
 }
 
 
 function showdetails() {
-    let newtotal=document.querySelector('#newtotal')
-    newtotal.innerText= 40-newdeleted+newadded
-    let newadd=document.querySelector('#newadd')
-    newadd.innerText=newadded
-    let newedit=document.querySelector('#newedit')
-    newedit.innerText=edited
-    let newdelete=document.querySelector('#newdelete')
-    newdelete.innerText=newdeleted
+    let newtotal = document.querySelector('#newtotal')
+    newtotal.innerText = 40 - newdeleted + newadded
+    let newadd = document.querySelector('#newadd')
+    newadd.innerText = newadded
+    let newedit = document.querySelector('#newedit')
+    newedit.innerText = edited
+    let newdelete = document.querySelector('#newdelete')
+    newdelete.innerText = newdeleted
 }

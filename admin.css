@@ -19,6 +19,7 @@
 }
 #asidenav{
     background-color:rgb(252, 242, 242);
+    border-right: 2px solid rgb(250, 181, 181) ;
     position: sticky;
     height: 100vh;
     padding-left: 30px;
@@ -63,7 +64,7 @@ body{
     align-items: center;
     padding: 0px 20px;
     justify-content: space-between;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgb(152, 151, 151);
     margin-bottom: 20px;
 }
 .navicon{
@@ -83,9 +84,12 @@ body{
     gap: 30px;
     margin-bottom: 20px;
 }
+
 #TotalItems>div,#NewlyAdded>div,#TotalEdited>div,#TotalDeleted>div{
     background-color:rgb(203, 231, 249);
+    border: 2px solid rgb(61, 200, 255);
     border-radius: 10px;
+    border-top-left-radius: 0px;
     padding:20px;
     font-size: 28px;
     display: flex;
@@ -93,22 +97,25 @@ body{
 }
 #NewlyAdded>div{
     background-color: rgb(209, 250, 209);
+    border: 2px solid rgb(33, 252, 5);
 }
 #TotalEdited>div{
     background-color: rgb(253, 253, 200);
+    border: 2px solid goldenrod;
 }
 #TotalDeleted>div{
     background-color: rgb(254, 203, 203);
+    border: 2px solid red;
 }
 #newadd,#newtotal,#newedit,#newdelete{
     font-size: 35px;
 }
 
 /* admin Details */
-#adminDetails,#addproduct,#updateproduct{
+#adminDetails{
     padding: 0px 20px;
     display: grid;
-    grid-template-columns: 63% 35%;
+    grid-template-columns: 64% 35%;
     justify-content: space-between;
 }
 #addproduct{
@@ -116,8 +123,9 @@ body{
     cursor: pointer;
 }
 #adminadname{
-    border: 5px solid rgb(180, 227, 246);
+    border: 5px solid rgb(149, 221, 250);
     padding: 20px;
+    border-top-right-radius: 20px;
     box-sizing: border-box;
     font-size: 30px;
     height: 500px;
@@ -130,27 +138,33 @@ body{
 }
 
 #fullinfo{
+    overflow: hidden;
     border: 5px solid lightgrey;
-    padding: 20px;
     box-sizing: border-box;
-    font-size: 30px;
     height: 500px;
+    border-radius: 20px;
 }
 
 
 /* add product */
+#addproduct,#updateproduct{
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 70% 28%;
+    justify-content: space-between;
+}
 #addform>h2,#updateform>h2{
     text-align: center;
 }
 #addform>form,#updateform>form{
-    width: 80%;
+    width: 90%;
     margin: 20px auto 0px auto;
     display: flex;
     flex-direction: column;
 }
 #addform>form>input,#updateform>form>input{
     height: 40px;
-    margin-top: 10px;
+    margin-top: 15px;
     padding-left: 10px;
     font-size: 25px;
     border-radius: 10px;
@@ -158,18 +172,35 @@ body{
 #addrender,#updaterender{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    gap: 8px;
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
     height: 650px;
     overflow-y: scroll;
 }
+#addrender>div,#updaterender>div{
+    padding: 5px;
+    border: 2px solid lightgrey;
+}
 
 /* deleting */
 #deletedrender{
-    padding: 20px;
+    padding: 10px;
     display: none;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    height: 630px;
+    overflow-y: scroll;
+}
+#deletedrender>div{
+    padding: 10px;
+    box-shadow: rgb(155, 155, 155) 0px 1px 8px;
+}
+
+#fullinfo>img{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 102%;
 }
