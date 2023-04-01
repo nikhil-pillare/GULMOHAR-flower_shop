@@ -1,1 +1,117 @@
 /* signup page styling */
+body{
+    margin: 0;
+    padding: 0;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    background-image: url("https://cdn1.harryanddavid.com/wcsstore/Celebrations/images/brand_backgrounds/18F_large.jpg");
+    background-size: 100%;
+}
+#maincontainer{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#left{
+    background-color:rgb(233, 176, 187);
+    height: 500px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 40%;
+    padding: 20px;
+    /* opacity: 85%; */
+    font-size: 16px;
+    border-radius: 15px;
+}
+#right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 230, 235);
+    padding: 20px;
+    height: 500px;
+    border-radius: 15px;
+}
+#right>form,h1,h3,.termContainer,#inst,#newone{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#inputdetail{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+#inputdetail>div{
+    width: 47%;
+}
+#inputdetail input,#email,#password{
+    width: 95%;
+    line-height: 30px;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 4px;
+}
+#submit{
+    width: 93%;
+    color: whitesmoke;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 97, 129);
+}
+input{
+    margin-top: 5px;
+    line-height: 20px;
+}
+#submit{
+    width: 100%;
+    line-height: 30px;
+}
+#image{
+    width: 100%;
+    display: flex;
+}
+#image>img{
+    width: 45%;
+    margin: auto;
+}
+#inst{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#newone{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+}
+#left img{
+    width: 100%;
+    /* opacity: 100%; */
+    border-radius: 15px;
+    margin-bottom: 70px;
+}
+#left>div>p{
+    margin-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+
+
+
