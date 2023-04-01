@@ -14,6 +14,7 @@ function displayCart(data) {
     document.querySelector(".cartcont").innerHTML = "";
     data.forEach((elem, index) => {
         let maindiv = document.createElement("div");
+        maindiv.setAttribute('class','main_pro')
         let leftdiv = document.createElement("div");
         leftdiv.setAttribute('class','product_img')
         let rightdiv = document.createElement("div");
@@ -24,7 +25,7 @@ function displayCart(data) {
         let title = document.createElement("h2")
         title.innerText = elem.title;
         let cata = document.createElement("h2")
-        cata.innerText = elem.category;
+        cata.innerText = elem.color;
         let qty = document.createElement("p");
         qty.innerText = "Qty: " + elem.id;
         let rating = document.createElement("p");
@@ -79,6 +80,7 @@ function totalCost(arr) {
             sum = 0;
         } else {
             sum = sum + (Number(qty[i].innerText) * arr[i].price);
+            
         }
     }
 

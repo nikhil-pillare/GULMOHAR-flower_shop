@@ -171,7 +171,7 @@ footer{
         margin: 0% 5%;
     }
 }
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     #Kpricestart,#Kpriceend{
         width: 60px;
         height: 25px;
@@ -180,7 +180,7 @@ footer{
     #Kdisplay{
         gap: 20px;
     }
-}
+} */
 @media screen and (max-width:780px){
     #Kdisplay{
         grid-template-columns: repeat(2,1fr);
@@ -195,7 +195,7 @@ footer{
     }
     
 }
-@media screen and (max-width:880px){
+/* @media screen and (max-width:880px){
     .Kbigdiskdiv{
         display: grid;
         grid-template-columns: auto;
@@ -206,7 +206,7 @@ footer{
         top: 15%;
     }
 
-}
+} */
 @media screen and (max-width:580px){
     #Kdescrip{
         width: 350px;
