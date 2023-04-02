@@ -1,6 +1,6 @@
 # groovy-airplane-6414
 
-# Gulmohar-Flower-Shop
+# [Gulmohar-Flower-Shop](https://gulmohar-the-flower-shop.netlify.app/)
 
 - Clone of [1-800 Flowers](https://www.1800flowers.com/)
 
@@ -9,9 +9,9 @@
 A team of four people created this project over the course of five days.
 #### Team Members
 1. [Nikhil pilare]() (fw24_151)
-2. Aditya fw24_753
-3. Sourabh fw25_095
-4. karan fw24_257
+2. [Aditya Choudhary](https://github.com/Aditya-Choudhary0) (fw24_753)
+3. [Sourabh Mandal](https://github.com/Sourabh-2101) (fw25_095)
+4. [Karan Jarwal] (https://github.com/karanjarwal999) fw24_257
 
 ### Netlify Link
 https://gulmohar-the-flower-shop.netlify.app/
