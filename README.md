@@ -106,7 +106,7 @@ In admin page we have functionality like:-
 
 ![User](https://user-images.githubusercontent.com/113030961/229379479-ca5c61b1-b319-49fb-ae5f-05fc85686ab3.JPG)
 
-Each and every page of the website  is ***responsive*** in nature for 3 screens i.e. `Desktop/Laptop, Tablet, and Mobile`.
+Each and every page of the website  is ***`responsive`*** in nature for 3 screens i.e. `Desktop/Laptop, Tablet, and Mobile`.
 
 This is the overall view of the website.
 
