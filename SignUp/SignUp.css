@@ -42,9 +42,13 @@ body{
     justify-content: space-around;
     background-color: rgb(255, 230, 235);
     padding: 20px;
-    min-height: 500px;
+    /* min-height: 500px; */
     /* height: 500px; */
     border-radius: 15px;
+}
+#success{
+    text-align: center;
+    margin-top: 50px;
 }
 #right>form,h1,h3,.termContainer,#inst,#newone{
     margin-left: 20px;
