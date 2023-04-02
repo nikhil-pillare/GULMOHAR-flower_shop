@@ -16,7 +16,7 @@
 
 .material-symbols-outlined {
     font-size: 30px !important;
-    margin: 20px 0px;
+    margin: 10px 0px;
     cursor: pointer;
 }
 
@@ -261,6 +261,29 @@ body {
     height: 100%;
 }
 
+/* userdetails */
+#userdetails{
+    display: none;
+    overflow-y: scroll;
+    height: 84vh;
+}
+
+table{
+    width: 98%;
+    margin: auto;
+    font-size: 20px;
+}
+tr{
+    text-align: center;
+}
+tbody>tr>td:last-child{
+    cursor: pointer;
+    padding: 2px;
+    background-color: rgb(251, 60, 60);
+}
+
+
+
 @media screen and (max-width:1200px) {
     #adminadname {
         font-size: 25px;
@@ -355,7 +378,7 @@ body {
         gap: 10px;
         padding-right: 5px;
     }
-
+    
     #newadd,
     #newtotal,
     #newedit,
@@ -500,6 +523,9 @@ body {
     #updaterender {
         height: 60vh;
     }
+    table{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:600px) {
     #recntTask>div>div>p {
@@ -536,5 +562,10 @@ body {
 @media screen and (max-width:400px) {
     #recntTask>div>div>p {
         font-size: 15px;
+    }
+    table{
+        font-size: 10px;
+        width: 93%;
+        margin-left: 5%;
     }
 }
