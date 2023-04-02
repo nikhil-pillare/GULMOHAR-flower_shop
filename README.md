@@ -113,12 +113,12 @@ This is the overall view of the website.
 
 Contributions to groovy-airplane-6414 are welcome! If you would like to contribute, please follow these guidelines:
 
-# Fork the repository
-Create a new branch for your changes
-Make your changes and commit them with clear commit messages
-Push your changes to your fork
-Create a pull request with a clear description of your changes
-Credits
+### Fork the repository
++ Create a new branch for your changes
++ Make your changes and commit them with clear commit messages
++ Push your changes to your fork
++ Create a pull request with a clear description of your changes
++ Credits
 
 
 
