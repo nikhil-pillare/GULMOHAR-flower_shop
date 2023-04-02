@@ -25,9 +25,10 @@ The project is built using HTML, CSS, and JavaScript, and is intended to be a re
 https://bored-school-uniform-bull.cyclic.app/flowers
 
 ### Tech-Stack Used 
--HTML
--CSS
--JavaScript
+
+- HTML
+- CSS
+- JavaScript
 
 
 ### Usage
@@ -47,6 +48,8 @@ We can filter our products based on our preference of the prize and rating of th
 We can add product to our cart page by clicking on the product.
 
 ![goToCart](https://user-images.githubusercontent.com/113030961/229374678-9a98a4e5-dce5-4dba-9c31-76c9ac831c2c.JPG)
+
+[cart](/cart.html) : A page to customize the quantity and select the products we want to buy.
 
 
 
