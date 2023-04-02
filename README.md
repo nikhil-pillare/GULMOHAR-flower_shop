@@ -35,31 +35,80 @@ https://bored-school-uniform-bull.cyclic.app/flowers
 Gulmohar is designed to be user-friendly and easy to navigate. The website includes the following pages:
 
 [Home](/index.html): A landing page with information about the store and featured products and categories.
+
+
 ![homepage](https://user-images.githubusercontent.com/113030961/229373643-9f50cfe7-e0c5-44ef-b22a-87a9c10a2c6d.JPG)
 
 
 [Product](/product.html): A page with a selection of products available for purchase.
+
+
 ![productpage](https://user-images.githubusercontent.com/113030961/229373765-76e74729-1b63-4fe8-b1f3-66fa1b114313.JPG)
 
+For the data of the product we created the [JSON API](https://bored-school-uniform-bull.cyclic.app/flowers) to store the data.
+then we feched the data from API and apply different filters and functionality.
 We can filter our products based on our preference of the prize and rating of the product.
+
 
 ![filterproduct](https://user-images.githubusercontent.com/113030961/229374190-28286884-4ab8-4893-a21a-fd8a49f3da34.jpg)
 
 We can add product to our cart page by clicking on the product.
+
 
 ![goToCart](https://user-images.githubusercontent.com/113030961/229374678-9a98a4e5-dce5-4dba-9c31-76c9ac831c2c.JPG)
 
 [cart](/cart.html) : A page to customize the quantity and select the products we want to buy.
 
 
+![cart page](https://user-images.githubusercontent.com/113030961/229377894-8056d101-18c7-491e-b307-834c467b046f.JPG)
+
+We have payment page during the checkout.
 
 
+![payment](https://user-images.githubusercontent.com/113030961/229378074-986f4911-73bb-4c66-9ac7-c6908c5fcc6f.JPG)
 
-`Sign-up` : A page
-`Sign-In`: A page with information about the store's history, values, and staff.
-`Contact Us`: A page with a contact form for customers to get in touch with the store.
-Users can browse products on the Shop page, read about the store on the About Us page, and contact the store on the Contact Us page.
+We also fave OTP generator for a secure payment.
 
+  
+![paymentOTP](https://user-images.githubusercontent.com/113030961/229378132-d3be3a52-54c9-41df-a251-b383476e2605.JPG)
+
+[Sign-up](/SignUp.html) : A page where the customer can create a new account for fast, seamless product purchases.
+
+
+![SignUp](https://user-images.githubusercontent.com/113030961/229378273-2d6164e0-cc47-4692-b700-4f275f707a9b.JPG)
+
+[Sign-In](SignIn.html): A page where existing users can sign in so that their experience is uninterrupted.
+
+
+![SignIn](https://user-images.githubusercontent.com/113030961/229378411-e38b3230-d483-4e76-8cb9-b5af89b75f55.JPG)
+
+[Admin](/admin.html): A page with all the control of the products displayed on the website and the User of the site.
+
+
+![adminDash](https://user-images.githubusercontent.com/113030961/229378973-c0deec98-e451-4f7f-883a-cda4a16aef3d.JPG)
+
+In admin page we have functionality like:-
+
+1. Add Product : 
+
+
+![addPro](https://user-images.githubusercontent.com/113030961/229379178-7f8c39e4-ebcc-4ecc-9d4c-beea196892cb.JPG)
+
+2. Edit Product : Same like Add we can update the values of the product that are present.
+
+3. Delete Product : We can Delete the product present by clicking the button and conforming.
+
+
+![deletePro](https://user-images.githubusercontent.com/113030961/229379349-7df49f96-bf28-42b7-8b41-c01599f83e34.JPG)
+
+4. User : A page giving the details about the user thst hsve signed up.
+
+
+![User](https://user-images.githubusercontent.com/113030961/229379479-ca5c61b1-b319-49fb-ae5f-05fc85686ab3.JPG)
+
+Each and every page of the website  is ***responsive***
+
+This is the overall view of the website.
 
 
 Contributions to groovy-airplane-6414 are welcome! If you would like to contribute, please follow these guidelines:
