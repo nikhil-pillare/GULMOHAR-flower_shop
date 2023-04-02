@@ -1,7 +1,7 @@
 let userData=JSON.parse(localStorage.getItem("userDatabase"))
     let mail;
     let password;
-    let message = document.getElementById("success")
+    let message = document.getElementById("shortmsg")
     let formData= document.querySelector("form")
     var flag = 0;
     formData.addEventListener("submit",function(e){
