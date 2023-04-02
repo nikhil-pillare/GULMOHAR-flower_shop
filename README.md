@@ -11,7 +11,7 @@ A team of four people created this project over the course of five days.
 1. [Nikhil pilare]() (fw24_151)
 2. [Aditya Choudhary](https://github.com/Aditya-Choudhary0) (fw24_753)
 3. [Sourabh Mandal](https://github.com/Sourabh-2101) (fw25_095)
-4. [Karan Jarwal] (https://github.com/karanjarwal999) fw24_257
+4. [Karan Jarwal](https://github.com/karanjarwal999) (fw24_257)
 
 ### Netlify Link
 https://gulmohar-the-flower-shop.netlify.app/
