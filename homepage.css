@@ -560,7 +560,7 @@ font-family: cursive;
     margin-left: 30px;
   }
 
-  @media (min-width:300px) and (max-width:700px) {
+  @media (min-width:440px) and (max-width:700px) {
     #brands{
         display: flex;
         width: 100%;
@@ -569,4 +569,192 @@ font-family: cursive;
         justify-content: space-around;
         align-items: center;
     }
+    #brands>img{
+        height: 40%;
+    }
+    #search-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #search-bar>form{
+        display: none;
+    }
+    #search-bar>img:nth-child(1){
+        width: 25%;
+    }
+   #nav{
+    display: none;
+    
+   }
+   #deliver{
+    height: 30px;
+   }
+   #deliver>a{
+    font-size: 11px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+   }
+   #shop>p{
+    display: none;
+   }
+   #banner>img{
+    height: 220px;
+   }
+   #banner{
+    height: 220px;
+   }
+   #address{
+    display: none;
+    margin-bottom: 0px;
+   }
+   .flower-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   }
+   #scrollmenu{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+   }
+   #scrollmenu>div>img{
+    width: 90%;
+    height: 160px;
+   }
+   #fetch-product{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+   }
+   #feedback{
+    display: none;
+   }
+   #footer-flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+   }
+   footer{
+    height: 900px;
+   }
+   #footer-flex>div{
+    margin-left: 8px;
+   }
+   #footer-flex>div:nth-child(5){
+   display: flex;
+   flex-direction: row;
+   width: 200%;
+
   }
+ 
+  #footer-flex>div>img{
+    width: 10%;
+    
+  }
+}
+
+@media (min-width:200px) and (max-width:439px) {
+    #brands{
+        display: none;
+    }
+    
+    #search-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #search-bar>form{
+        display: none;
+    }
+    #search-bar>img:nth-child(1){
+        width: 25%;
+        margin-right: 30px;
+    }
+    #search-bar>div{
+        margin-right: 18px;
+    }
+    #search-bar>img{
+        margin-left: 5px;
+        width: 20%;
+    }
+   #nav{
+    display: none;
+    
+   }
+   #deliver{
+    height: 30px;
+    display: none;
+   }
+   
+   #shop>p{
+    display: none;
+   }
+   #shop>h5{
+    font-size: 10px;
+   
+   }
+   #shop>h4{
+    font-size: 25px;
+   }
+   #banner>img{
+    height: 220px;
+    width: 100%;
+   }
+
+   #banner{
+    height: 220px;
+    width: 100%;
+   }
+   #address{
+    display: none;
+    margin-bottom: 0px;
+   }
+   .flower-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+   .gift{
+    display: none;
+   }
+   #scrollmenu{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+   }
+   #scrollmenu>div>img{
+    width: 90%;
+    height: 160px;
+   }
+   #fetch-product{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+   }
+   #feedback{
+    display: none;
+   }
+   #footer-flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+   }
+   footer{
+    height: 1150px;
+   }
+   #footer-flex>div{
+    margin-left: 8px;
+   }
+   #footer-flex>div:nth-child(5){
+   display: flex;
+   flex-direction: row;
+   width: 200%;
+
+  }
+ 
+  #footer-flex>div>img{
+    width: 10%;
+    
+  }
+}
