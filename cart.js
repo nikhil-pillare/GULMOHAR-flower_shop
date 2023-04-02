@@ -75,16 +75,17 @@ function displayCart(data) {
 function totalCost(arr) {
     let qty = document.querySelectorAll(".qty");
     let sum = 0;
+    let gst = 0;
     for (let i = 0; i <= qty.length - 1; i++) {
         if (arr.length == 0) {
             sum = 0;
         } else {
             sum = sum + (Number(qty[i].innerText) * arr[i].price);
-            
+            gst += sum*18/100;
         }
     }
 
-    document.querySelector(".total").innerText = sum;
+    document.querySelector(".total").innerText = sum +gst;
 }
 
 function deleteData(array, index) {
