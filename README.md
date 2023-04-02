@@ -2,11 +2,13 @@
 
 # Gulmohar-Flower-Shop
 
-- Clone of 1-800 Flowers
+- Clone of [1-800 Flowers](https://www.1800flowers.com/)
 
 ### Contribution
-This Project is made by a team consisting 4 members:-
-1. Nikhil fw24_151
+
+A team of four people created this project over the course of five days.
+#### Team Members
+1. [Nikhil pilare]() (fw24_151)
 2. Aditya fw24_753
 3. Sourabh fw25_095
 4. karan fw24_257
@@ -22,14 +24,34 @@ The project is built using HTML, CSS, and JavaScript, and is intended to be a re
 ### JSON SERVER 
 https://bored-school-uniform-bull.cyclic.app/flowers
 
+### Tech-Stack Used 
+-HTML
+-CSS
+-JavaScript
+
 
 ### Usage
 Gulmohar is designed to be user-friendly and easy to navigate. The website includes the following pages:
 
-[Home](/index.html): A landing page with information about the store and featured products.
+[Home](/index.html): A landing page with information about the store and featured products and categories.
+![homepage](https://user-images.githubusercontent.com/113030961/229373643-9f50cfe7-e0c5-44ef-b22a-87a9c10a2c6d.JPG)
 
 
-`Product`: A page with a selection of products available for purchase.
+[Product](/product.html): A page with a selection of products available for purchase.
+![productpage](https://user-images.githubusercontent.com/113030961/229373765-76e74729-1b63-4fe8-b1f3-66fa1b114313.JPG)
+
+We can filter our products based on our preference of the prize and rating of the product.
+
+![filterproduct](https://user-images.githubusercontent.com/113030961/229374190-28286884-4ab8-4893-a21a-fd8a49f3da34.jpg)
+
+We can add product to our cart page by clicking on the product.
+
+![goToCart](https://user-images.githubusercontent.com/113030961/229374678-9a98a4e5-dce5-4dba-9c31-76c9ac831c2c.JPG)
+
+
+
+
+
 `Sign-up` : A page
 `Sign-In`: A page with information about the store's history, values, and staff.
 `Contact Us`: A page with a contact form for customers to get in touch with the store.
