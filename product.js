@@ -18,7 +18,7 @@ Kdisplaybutton(newdata)
 }
 
 // input data search
-let Kinputdata=document.getElementById('inputdata')
+let Kinputdata=document.getElementById('inputsearch')
 Kinputdata.addEventListener('input',()=>{ 
     lastchecked.checked=false
     // let p;

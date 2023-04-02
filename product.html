@@ -28,23 +28,23 @@
 
 
     <div id="search-bar">
-        <img src="gulmohar.png" alt="logo">
+        <img onclick="(window.location.href='./index.html')" src="gulmohar.png" alt="logo">
          
-         <form>
-         <input id="inputdata" type="text" placeholder="     search for items and brands">
-         <button>SEARCH</button>
- 
-       </form>
+        <form id="search" action="/search">
+          <input id="inputsearch" type="text" placeholder="search for items and brands">
+          <input id="searchbtn" type="submit" value="SEARCH">
+  
+        </form>
        <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt34a8699231b452d4/reminders_icon_black.svg" alt="">
          <div class="dropdown">
              <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt88337dc20d1d8278/5e178293942caf0fc36b77ab/Header-Icon-PWA-profile.svg" alt="" id="pro">
              <div class="dropdown-content">
                 <a href="./signIn.html">My Account</a>
-                <a href="">My Orders</a>
-                <a href="">My Returns</a>
-                <a href="">Sign In</a>
+                <a href="./cart.html">My Orders</a>
+                <a href="./index.html">My Returns</a>
+                <a href="./SignIn/SignIn.html">Sign In</a>
                 <a href="">Join</a>
-                <a onclick="" href="">Sign Out</a>
+                <a href="./SignIn/SignIn.html">Sign Out</a>
              </div>
             </div>
          <img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltd7f3af8e242d37c1/5e1782936430b50f03d6ccc3/Header-Icon-PWA-truck.svg?height=25&width=44" alt="" id="dil">
@@ -416,7 +416,7 @@
     <div id="Kmaindiv">
         <div id="Kfilters">
             <div id="Krateingfilter">
-                Rateing <br>
+                Rating <br>
                 <input type="checkbox" value="5" id="Krateing5">
                 <label for="Krateing5">&#9733&#9733&#9733&#9733&#9733</label><br>
                 <input type="checkbox" value="4" id="Krateing4">

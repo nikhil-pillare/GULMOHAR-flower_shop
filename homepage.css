@@ -65,7 +65,7 @@ form{
 }
 #inputsearch{
     width: 80%;
-    
+    padding-left: 10px;
     height: 100%;
     font-size: 15px;
     border: 0.3px solid rgb(181, 181, 181);

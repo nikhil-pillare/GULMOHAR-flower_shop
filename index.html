@@ -30,7 +30,7 @@
         <img src="gulmohar.png" alt="logo">
          
          <form id="search" action="/search">
-         <input id="inputsearch" type="text" placeholder="     search for items and brands">
+         <input id="inputsearch" type="text" placeholder="search for items and brands">
          <input id="searchbtn" type="submit" value="SEARCH">
  
        </form>
@@ -755,7 +755,7 @@ function renderproduct(products){
         productdetail.textContent=product.rating;
 
         const productprice=document.createElement("p")
-        productprice.textContent='₹' +product.price;
+        productprice.textContent='$' +product.price;
 
 
         productCard.append(productimg,productname, productdetail, productprice);
