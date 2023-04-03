@@ -34,7 +34,7 @@ https://bored-school-uniform-bull.cyclic.app/flowers
 ### Usage
 Gulmohar is designed to be user-friendly and easy to navigate. The website includes the following pages:
 
-[Home](/index.html): A landing page with information about the store and featured products and categories.
+[Home](/index.html)Made by :shipit: : A landing page with information about the store and featured products and categories.
 
 
 ![homepage](https://user-images.githubusercontent.com/113030961/229373643-9f50cfe7-e0c5-44ef-b22a-87a9c10a2c6d.JPG)
