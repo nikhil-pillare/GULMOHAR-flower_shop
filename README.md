@@ -84,7 +84,9 @@ We also have `OTP generator` for a secure payment.
 
 ![SignIn](https://user-images.githubusercontent.com/113030961/229378411-e38b3230-d483-4e76-8cb9-b5af89b75f55.JPG)
 
-[**`Admin`**](/admin.html) 👨‍💼(Karan Jawar) : A page with all the control of the products displayed on the website and the User of the site.
+[**`Admin`**](/admin.html) 👨‍💼( Karan Jawar ): A page with all the control of the products displayed on the website and the User of the site.
+
+![**Visit Admin Page**](https://gulmohar-the-flower-shop.netlify.app/admin)
 
 
 ![adminDash](https://user-images.githubusercontent.com/113030961/229378973-c0deec98-e451-4f7f-883a-cda4a16aef3d.JPG)
